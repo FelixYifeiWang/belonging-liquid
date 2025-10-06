@@ -1,4 +1,4 @@
-import KinshipVisualization from './v1.2.0';
+import KinshipVisualization from './v1.5.0';
 
 function App() {
   return <KinshipVisualization />;
