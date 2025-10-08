@@ -55,8 +55,6 @@ const KinshipVisualization = () => {
   const [searchQuery, setSearchQuery] = useState(''); // search query
   const [searchResults, setSearchResults] = useState([]); // search results
   const [showSearchDropdown, setShowSearchDropdown] = useState(false); // show dropdown
-  const [zoomCounter, setZoomCounter] = useState(0); // track consecutive zoom actions
-  const [lastZoom, setLastZoom] = useState(1); // track last zoom level
   
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
@@ -153,7 +151,7 @@ const KinshipVisualization = () => {
       const affiliationsText = Object.values(row)[10] || ''; // New: affiliations column
       
       // Extract scope level for filtering
-      let scopeLevel = 'local'; // Default to local if not specified
+      let scopeLevel = 'other';
       const lower = scopeText.toLowerCase();
       if (lower.includes('international') || lower.includes('global')) scopeLevel = 'global';
       else if (lower.includes('national')) scopeLevel = 'national';
@@ -245,7 +243,7 @@ const KinshipVisualization = () => {
     
     // TEMPORARY: Auto-generate affiliations for testing
     // Each culture has a 60% chance to affiliate with a random culture 1 level higher
-    const scopeHierarchy = ['family', 'local', 'regional', 'national', 'global'];
+    const scopeHierarchy = ['family', 'local', 'regional', 'national', 'global', 'other'];
     
     mergedCultures.forEach(culture => {
       const currentScopeIndex = scopeHierarchy.indexOf(culture.scopeLevel);
@@ -285,7 +283,7 @@ const KinshipVisualization = () => {
     });
     
     // Set available scope levels - sorted from largest to smallest
-    const scopeOrder = ['all', 'global', 'national', 'regional', 'local', 'family'];
+    const scopeOrder = ['all', 'global', 'national', 'regional', 'local', 'family', 'other'];
     const levels = scopeOrder.filter(scope => scope === 'all' || scopeSet.has(scope));
     setScopeLevels(levels);
     
@@ -1861,81 +1859,6 @@ const KinshipVisualization = () => {
     isDraggingRef.current = false;
   };
 
-  // Handle automatic scope change based on zoom
-  const handleZoomScopeChange = (newZoom) => {
-    if (selectedCulture) return; // Don't change scope in focused mode
-    
-    const scopeHierarchy = ['all', 'global', 'national', 'regional', 'local'];
-    const currentIndex = scopeHierarchy.indexOf(selectedScope);
-    
-    if (currentIndex === -1) return; // Invalid scope
-    
-    // Determine zoom direction
-    const isZoomingOut = newZoom < lastZoom;
-    const isZoomingIn = newZoom > lastZoom;
-    
-    if (!isZoomingOut && !isZoomingIn) return; // No zoom change
-    
-    // Update counter based on direction
-    let newCounter = zoomCounter;
-    
-    if ((isZoomingOut && zoomCounter > 0) || (isZoomingIn && zoomCounter < 0)) {
-      // Direction changed, reset counter
-      newCounter = isZoomingOut ? -1 : 1;
-    } else {
-      // Same direction, increment counter
-      newCounter = isZoomingOut ? zoomCounter - 1 : zoomCounter + 1;
-    }
-    
-    setZoomCounter(newCounter);
-    setLastZoom(newZoom);
-    
-    // Check if we've zoomed 5 times in one direction
-    if (newCounter <= -5 && currentIndex < scopeHierarchy.length - 1) {
-      // Zoomed out 5 times, move to smaller scope
-      setSelectedScope(scopeHierarchy[currentIndex + 1]);
-      setZoomCounter(0);
-      
-      // Reset zoom to 100%
-      const canvas = canvasRef.current;
-      if (canvas) {
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 2;
-        const worldX = (centerX + cameraRef.current.x) / cameraRef.current.zoom;
-        const worldY = (centerY + cameraRef.current.y) / cameraRef.current.zoom;
-        
-        cameraRef.current = {
-          x: worldX * 1 - centerX,
-          y: worldY * 1 - centerY,
-          zoom: 1
-        };
-        setCamera({ ...cameraRef.current });
-        setLastZoom(1);
-      }
-    } else if (newCounter >= 5 && currentIndex > 0) {
-      // Zoomed in 5 times, move to larger scope
-      setSelectedScope(scopeHierarchy[currentIndex - 1]);
-      setZoomCounter(0);
-      
-      // Reset zoom to 100%
-      const canvas = canvasRef.current;
-      if (canvas) {
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 2;
-        const worldX = (centerX + cameraRef.current.x) / cameraRef.current.zoom;
-        const worldY = (centerY + cameraRef.current.y) / cameraRef.current.zoom;
-        
-        cameraRef.current = {
-          x: worldX * 1 - centerX,
-          y: worldY * 1 - centerY,
-          zoom: 1
-        };
-        setCamera({ ...cameraRef.current });
-        setLastZoom(1);
-      }
-    }
-  };
-
   // Zoom control functions
   const handleZoomIn = () => {
     if (selectedCulture) return;
@@ -1959,7 +1882,6 @@ const KinshipVisualization = () => {
     };
     
     setCamera({ ...cameraRef.current });
-    handleZoomScopeChange(newZoom);
   };
 
   const handleZoomOut = () => {
@@ -1984,7 +1906,6 @@ const KinshipVisualization = () => {
     };
     
     setCamera({ ...cameraRef.current });
-    handleZoomScopeChange(newZoom);
   };
 
   const handleZoomReset = () => {
@@ -2353,10 +2274,7 @@ const KinshipVisualization = () => {
                     {scopeLevels.map(level => (
                       <button
                         key={level}
-                        onClick={() => {
-                          setSelectedScope(level);
-                          setZoomCounter(0); // Reset zoom counter on manual scope change
-                        }}
+                        onClick={() => setSelectedScope(level)}
                         style={{
                           padding: '0.5rem 0.75rem',
                           backgroundColor: selectedScope === level ? 'rgba(96, 165, 250, 0.3)' : 'rgba(255,255,255,0.05)',
