@@ -2237,6 +2237,7 @@ const KinshipVisualization = () => {
                 onChange={(e) => handleSearch(e.target.value)}
                 style={{
                   width: '100%',
+                  boxSizing: 'border-box',
                   padding: '0.75rem',
                   backgroundColor: 'rgba(255,255,255,0.05)',
                   border: '1px solid rgba(255,255,255,0.2)',
