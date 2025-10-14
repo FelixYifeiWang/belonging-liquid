@@ -1,0 +1,161 @@
+Name,Kinships,Affiliation,Knowledgebase,Openness,Scope,Sides,InteriorParticleCount,ParticlesPerEdge,BorderParticleCount,TotalParticleCount,Color
+Neo-spiritualism,"Ecumenical Nature Spirituality, Indigenous Spirituality, Mystical Naturalism, Engaged Buddhism",,4,5,global,4,78,7,28,106,#00D18E
+Data Science,"Software Developers, Open Source Maintainers, Research Software Engineers, Coding Community",,5,6,global,4,122,6,24,146,#E22B60
+Gamers,"Live Streamers, Science Fiction Fandom, Cosplayers",,6,5,global,3,78,7,21,99,#FF901F
+Board Games,"Ttrpg Communities, Fantasy Miniature Painting, Model Railroading, Mosaic Miniatures Guild",,5,6,global,4,100,6,24,124,#C70070
+Digital Nomads,"Maker Culture, Solidarity Economy, Sustainable Living, Minimalist Living, Open Source Software, Cooperative Housing",,5,6,global,6,51,6,36,87,#FF39C1
+Street Art,"Zine Culture, Photography Culture, Visual Storytellers, Contemporary Artisan Movement, Social Justice Activists",,5,5,global,5,121,7,35,156,#2C7DFF
+Craft Beer,"Contemporary Artisan Movement, Artisanal Craft Movement, Solidarity Economy, Slow Craft",,5,6,local,4,113,6,24,137,#99B2FF
+Cosplay,"Comic Creators, Sff Fans, Anime Fandom, Ttrpg Communities, Live Streamers, Science Fiction Fandom, Gamers, Digital Content Creators",,5,6,global,8,154,7,56,210,#7538F0
+Environmental Activism,"Sustainable Living, Urban Planners, Data Scientists, Urban Gardening Community, Social Justice Activists",,6,5,global,5,87,7,35,122,#009AFF
+Book Lovers Society,"Digital Archivists, Academic Research Community, Zine Culture, Digital Content Creators",,4,5,local,4,30,7,28,58,#FC003D
+Minimalism,"Buddhism, Minimalist Living, Professional Organizers",,5,6,global,3,32,6,18,50,#4CBCFF
+Academic Research Community,"Data Scientists, Research Software Engineers, Data Visualization Professionals, Open Source Maintainers, Science Communicators, Academic Librarians, Computational Humanities Consortium, K-12 Educators",,5,6,global,8,260,8,64,324,#BE0087
+Professional Organizers,"Sustainable Living, Mindful Living, Minimalism, Minimalist Living, Urban Homesteaders",,5,6,national,5,102,6,30,132,#009FFF
+Contemporary Artisan Movement,"Global Experimental Arts, Slow Craft, Maker Culture, Fantasy Miniature Painting",,5,5,national,4,92,7,28,120,#C118E7
+Urban Gardening Community,"Culinary Culture, Plant-based Living, Green Movement, Cooperative Housing, Urban Planners, Environmental Activism, Sustainable Living",,5,6,local,7,102,6,42,144,#CC99FF
+Surrealism,"Global Experimental Arts, Street Art, Visual Storytellers",,5,4,global,3,32,7,21,53,#B44A00
+Model Railroading,"Fantasy Miniature Painting, Photography Culture, Tabletop Gamers, Woodworking Community",,5,6,local,4,54,6,24,78,#00B6FF
+Mindful Living,"Plant-based Living, Zen Buddhist Sangha, Interspirituality, Buddhism",,5,6,global,4,76,6,24,100,#F90000
+Mystical Naturalism,"Neopaganism, Environmental Activism, Climate Justice, Indigenous Spirituality",,5,6,global,4,41,6,24,65,#87A9FF
+Buddhism,"Mindful Living, Hinduism, Interspirituality, Zen Buddhist Sangha",,5,5,global,4,76,7,28,104,#0053F9
+Feminist Art,"Civil Rights, Body Positivity Movement, Black Lives Matter",,5,6,global,3,70,6,18,88,#00B7FF
+Sustainable Living,"Environmental Activism, Cooperative Housing, Minimalist Living",,5,6,global,3,71,6,18,89,#515EFF
+Impressionism,"Surrealism, Contemporary Artisan Movement, Global Experimental Arts, Renaissance Art, Abstract Expressionism",,5,4,global,5,35,7,35,70,#C89AFF
+Kite Flying,"Contemporary Artisan Movement, Photography Culture, Sustainable Living",,5,6,global,3,52,6,18,70,#5739FF
+Vegetarianism,"Urban Homesteaders, Climate Justice, Green Movement",,5,6,global,3,34,6,18,52,#4F93FF
+Visual Storytellers,"Global Experimental Arts, Digital Archivists, Street Art, Photography Culture",,5,6,global,4,49,6,24,73,#9C3CFF
+Artisanal Craft Movement,"Slow Craft, Woodworking Community, Maker Culture, Culinary Culture, Urban Gardening Community",,6,5,global,5,31,7,35,66,#00E4FF
+Data Visualization Professionals,"Science Communicators, Academic Research Community, Open Source Software",,5,4,global,3,35,7,21,56,#007DCD
+Coding Community,"Open Source Software, Fediverse, Prompt Crafting, Research Software Engineers, Independent Game Developers",,6,5,global,5,58,7,35,93,#00AFFF
+Digital Art Community,"Visual Storytellers, Live Streamers, Comic Creators, Maker Culture, Digital Archivists",,5,6,global,5,54,6,30,84,#009DF3
+Body Positivity Movement,"Feminist Art, Progressive Civic Alliance, Participatory Democracy",,5,6,global,3,32,6,18,50,#DC95FF
+Csr Advocates,"Environmental Activism, Sustainable Living, Green Movement",,5,5,global,3,48,7,21,69,#004BFF
+Theatre Culture,"Visual Storytellers, Digital Content Creators, Film Photographers, Social Justice Activists, Cosplay Community, Maker Culture",,6,5,national,6,133,7,42,175,#00BCFF
+Anime Fandom,"Live Streamers, Science Fiction Fandom, Gamers, Cosplay Community",,5,6,global,4,29,6,24,53,#F40097
+Culinary Culture,"Slow Craft, Urban Gardening Community, Plant-based Living, Vegans, Sustainable Living, Craft Beer",,5,4,global,6,90,7,42,132,#00DFFF
+Fitness Culture,"Mindful Living, Vegetarianism, Body Positivity Movement, Healthcare Workers",,5,5,local,4,108,7,28,136,#3E41FF
+Indigenous Spirituality,"Ecumenical Nature Spirituality, Climate Justice, Indigenous North Americans",,4,5,local,3,64,7,21,85,#AA6BFF
+Social Justice Activists,"Civil Rights, Black Lives Matter, Climate Justice, Participatory Democracy, Progressive Civic Alliance, Solidarity Economy, Green Movement",,5,4,global,7,110,7,49,159,#00AF75
+Photography Culture,"Visual Storytellers, Digital Art Community, Film Photographers, Digital Content Creators, Digital Nomads, Zine Culture",,5,5,global,6,53,7,42,95,#FF6BFF
+Cybersecurity Professionals,"Fediverse, Privacy Designers, Open Source Maintainers",,6,5,global,3,60,7,21,81,#008C6A
+Abstract Expressionism,"Artisanal Craft Movement, Visual Storytellers, Impressionism, Renaissance Art, Digital Art Community",,6,5,global,5,68,7,35,103,#9185FF
+Fantasy Miniature Painting,"Cosplay Community, Emberforge Miniature Guild, Mosaic Miniatures Guild, Indie Tabletop Designers",,5,5,global,4,74,7,28,102,#00AD82
+Renaissance Art,"Photography Culture, Artisanal Craft Movement, Theatre Culture",,5,4,global,3,51,7,21,72,#FF5EEE
+Quakerism,"Social Justice Activists, Interspirituality, Climate Justice, Progressive Christianity, Civil Rights, Engaged Buddhism, Participatory Democracy",,5,6,regional,7,102,6,42,144,#00869E
+Civil Rights,"Black Lives Matter, Social Justice Activists, Participatory Democracy, Progressive Civic Alliance, Climate Justice, Academic Research Community, K-12 Educators, Unitarian Universalism",,6,5,global,8,123,7,56,179,#FF43EE
+Urban Planners,"Urban Homesteaders, Solidarity Economy, Cooperative Housing, Environmental Activism",,5,4,national,4,73,7,28,101,#009D00
+Lightbearers,"Zen Buddhist Sangha, Mindful Living, Mystical Naturalism, Interspirituality, Interfaith Earth Communion",,6,5,national,5,119,7,35,154,#8FA5FF
+Climate Justice,"Csr Advocates, Civil Rights, Social Justice Activists, Participatory Democracy, Black Lives Matter, Solidarity Economy, Indigenous Spirituality, Environmental Activism",,4,5,global,8,130,7,56,186,#5930FF
+Woodworking Community,"Maker Culture, Verdant Loom Collective, Artisanal Craft Movement",,5,4,global,3,62,7,21,83,#FF3DE6
+Analog Synthesis Circle,"Maker Culture, Digital Art Community, Open Source Software, Open Source Maintainers",,4,5,national,4,81,7,28,109,#00AC7E
+Computational Humanities Consortium,"Academic Librarians, Digital Archivists, Academic Research Community, Open Source Software, Research Software Engineers, Data Scientists",,5,6,global,6,112,6,36,148,#B192FF
+Lumen Printmakers Guild,"Global Experimental Arts, Street Art, Verdant Loom Collective, Comic Creators, Visual Storytellers",,5,6,global,5,106,6,30,136,#008E00
+Meridian Craft Collective,"Contemporary Artisan Movement, Lumen Printmakers Guild, Global Experimental Arts, Artisanal Craft Movement, Netweave Syndicate, Verdant Loom Collective, Aurora Weave Collective",,5,5,global,7,94,7,49,143,#00C0FF
+Commonweal Alliance,"Participatory Democracy, Solidarity Economy, Progressive Civic Alliance, Climate Justice, Environmental Activism, Open Source Maintainers, Social Justice Activists, Quakers, Progressive Christianity, Interfaith Earth Communion",,5,5,regional,10,174,8,80,254,#7C43FF
+Nocturne Forge Circle,"Global Experimental Arts, Emberforge Miniature Guild, Fantasy Miniature Painting, Board Game Enthusiasts",,4,5,global,4,111,7,28,139,#FF75FF
+Verdant Loom Collective,"Visual Storytellers, Maker Culture, Digital Art Community, Netweave Syndicate",,6,6,regional,4,106,6,24,130,#8400EA
+Zine Culture,"Ttrpg Communities, Comic Creators, Indie Tabletop Designers",,6,6,local,3,41,6,18,59,#00A7FF
+Emberline Assembly,"Artisanal Craft Movement, Green Movement, Sustainable Living, Maker Culture, Urban Planners, Slow Craft",,5,5,local,6,103,7,42,145,#00A793
+Pixel Cartographers Collective,"Urban Planners, Research Software Engineers, Data Visualization Professionals, Maker Culture, Academic Research Community, Open Source Maintainers, Data Scientists",,6,6,global,7,128,6,42,170,#00CAFF
+Maker Culture,"Woodworking Community, Open Source Maintainers, Digital Art Community, K-12 Educators",,4,6,global,4,41,6,24,65,#D40076
+The Velvet Praxis,"Aurora Weave Collective, Slow Craft, Analog Synthesis Circle, Contemporary Artisan Movement, Global Experimental Arts",,5,6,global,5,69,6,30,99,#F945F8
+Aurora Weave Collective,"Analog Synthesis Circle, Global Experimental Arts, Zine Culture, Slow Craft",,6,6,local,4,59,6,24,83,#007EFF
+Netweave Syndicate,"Software Developers, Data Scientists, Digital Art Community, Cybersecurity Professionals, Coding Community",,5,6,global,5,105,6,30,135,#00EE75
+Emberforge Miniature Guild,"Maker Culture, Sff Fans, Indie Tabletop Designers",,6,5,global,3,36,7,21,57,#0071E3
+Verdant Accord,"Green Movement, Solidarity Economy, Environmental Activism, Social Justice Activists, Urban Gardening Community",,5,6,global,5,145,7,35,180,#00BAFF
+Mosaic Miniatures Guild,"Fantasy Miniature Painting, Tabletop Gamers, Model Railroading, Maker Culture, Indie Tabletop Designers",,4,5,national,5,97,7,35,132,#00AA62
+Zen Buddhist Sangha,"Secular Mindfulness, Interspirituality, Quakers",,5,5,national,3,75,7,21,96,#00EBFF
+Cosplay Community,"Digital Art Community, Photography Culture, Science Fiction Fandom, Tabletop Gamers, Theatre Culture, Maker Culture",,5,6,local,6,136,6,36,172,#009782
+Black Lives Matter,"Participatory Democracy, Social Justice Activists, African Diaspora, Progressive Civic Alliance, K-12 Educators",,5,6,global,5,138,6,30,168,#7A84FF
+Open Source Maintainers,"Data Scientists, Cybersecurity Professionals, Coding Community, Academic Research Community, Research Software Engineers, Open Source Software",,5,6,global,6,128,6,36,164,#0092E3
+Islam,"South Asian, Judaism, Progressive Christianity, Roman Catholicism",,4,5,global,4,68,7,28,96,#F471FF
+Legacy Hardware Collectors,"Software Developers, Maker Culture, Academic Librarians, Open Source Software",,5,6,global,4,124,6,24,148,#006BE2
+K-pop Fandom,"Anime Fandom, Cosplayers, Gamers, Digital Content Creators, Live Streamers, Social Justice Activists",,6,7,global,6,116,6,36,152,#00C7FF
+Green Movement,"Progressive Civic Alliance, Urban Planners, Sustainable Living, Environmental Activism",,5,6,regional,4,110,6,24,134,#495EFF
+Cosplayers,"Anime Fandom, Science Fiction Fandom, Ttrpg Communities, Maker Culture, Photography Culture, Digital Content Creators, Social Justice Activists",,5,7,global,7,126,6,42,168,#FFA600
+Software Developers,"Data Scientists, Fediverse, Research Software Engineers, Maker Culture",,7,7,global,4,114,6,24,138,#005FF7
+Indie Tabletop Designers,"Ttrpg Communities, Board Game Enthusiasts, Tabletop Gamers, Independent Game Developers, Maker Culture, K-12 Educators, Digital Content Creators",,6,5,global,7,115,7,49,164,#6B86FF
+Digital Content Creators,"Live Streamers, Open Source Maintainers, Gamers, Visual Storytellers, Science Communicators, Open Source Software",,5,5,global,6,113,7,42,155,#00AD3C
+Ttrpg Communities,"Tabletop Gamers, Board Game Enthusiasts, Sff Fans, K-12 Educators, Live Streamers",,5,6,global,5,105,6,30,135,#CED000
+Spiritual Traditions,"Interfaith Earth Communion, Secular Mindfulness, Progressive Christianity, Zen Buddhist Sangha, Unitarian Universalism",,5,5,global,5,98,7,35,133,#008D24
+Vegans,"Culinary Culture, Plant-based Living, Mindful Living, Sustainable Living, Vegetarianism, Solidarity Economy",,5,6,global,6,64,6,36,100,#FF6E00
+Sff Fans,"Science Fiction Fandom, Cosplay Community, Comic Creators, Anime Fandom, Board Game Enthusiasts, Book Lovers Society, Tabletop Gamers",,5,5,global,7,95,7,49,144,#8A8B00
+Digital Archivists,"Open Source Software, Science Communicators, Computational Humanities Consortium, Data Scientists, Academic Research Community, Open Source Maintainers",,5,6,global,6,108,6,36,144,#FF8400
+Progressive Civic Alliance,"Civil Rights, Progressive Christianity, Participatory Democracy, Black Lives Matter, Climate Justice, Green Movement, Solidarity Economy",,4,4,global,7,110,7,49,159,#8000ED
+Board Game Enthusiasts,"Ttrpg Communities, Board Games, Tabletop Gamers",,5,5,global,3,93,7,21,114,#D69700
+Global Experimental Arts,"Digital Art Community, Visual Storytellers, Participatory Democracy, Maker Culture, Zine Culture, Artisanal Craft Movement",,4,6,national,6,104,6,36,140,#CB0FDE
+Scholarly Research Circles,"Science Communicators, Research Software Engineers, Open Source Software, Academic Librarians",,5,4,global,4,107,7,28,135,#00CCFF
+Science Fiction Fandom,"Science Communicators, Comic Creators, Cosplay Community, Gamers, Maker Culture",,6,6,global,5,95,6,30,125,#0051FC
+Ecumenical Nature Spirituality,"Buddhism, Neopaganism, Environmental Activism, Quakerism, Climate Justice, Sustainable Living",,6,6,global,6,80,6,36,116,#CCA200
+Participatory Democracy,"Civil Rights, Progressive Civic Alliance, Solidarity Economy, Open Source Software",,6,7,regional,4,66,6,24,90,#7B43FF
+Independent Game Developers,"Indie Tabletop Designers, Gamers, Maker Culture, Software Developers, Ttrpg Communities, Digital Art Community",,5,6,global,6,80,6,36,116,#4CB0FF
+Fediverse,"Open Source Software, Digital Archivists, Privacy Designers, Live Streamers, Open Source Maintainers, Netweave Syndicate",,6,5,global,6,66,7,42,108,#A100C8
+Hinduism,"Buddhism, Sikhism, South Asian, Secular Mindfulness, Interspirituality, Spiritual Traditions",,4,3,global,6,113,8,48,161,#00CB22
+Open Source Software,"Open Source Maintainers, Maker Culture, Coding Community, Scholarly Research Circles, Fediverse",,6,6,global,5,100,6,30,130,#A51AF2
+Urban Homesteaders,"Maker Culture, Cooperative Housing, Solidarity Economy, Environmental Activism, Urban Planners",,6,6,global,5,109,6,30,139,#C592FF
+Secular Mindfulness,"Buddhism, Academic Research Community, Engaged Buddhism",,4,6,global,3,83,6,18,101,#7300E5
+Prompt Crafting,"Research Software Engineers, Academic Research Community, Privacy Designers, Data Visualization Professionals",,7,6,global,4,113,6,24,137,#BD55FF
+Minimalist Living,"Environmental Activism, Green Movement, Plant-based Living, Cooperative Housing, Mindful Living",,6,7,global,5,50,6,30,80,#007DFF
+Solidarity Economy,"Social Justice Activists, Climate Justice, Environmental Activism, Cooperative Housing, Urban Homesteaders, Participatory Democracy, Urban Planners",,5,6,global,7,139,6,42,181,#FF5451
+Cooperative Housing,"Social Justice Activists, Participatory Democracy, Environmental Activism, Urban Gardening Community",,6,5,global,4,131,7,28,159,#0042FA
+Live Streamers,"Gamers, Cosplay Community, Ttrpg Communities, Maker Culture, Open Source Software, Open Source Maintainers, Digital Art Community, Software Developers",,6,6,global,8,260,8,64,324,#D649FF
+Vanlife,"Maker Culture, Digital Nomads, Environmental Activism, Minimalist Living, Live Streamers",,6,7,national,5,100,6,30,130,#0070FF
+Tabletop Gamers,"Science Fiction Fandom, Live Streamers, Independent Game Developers, Maker Culture",,5,6,global,4,96,6,24,120,#4FABFF
+Data Scientists,"Research Software Engineers, Data Visualization Professionals, Academic Research Community, Open Source Maintainers, Privacy Designers",,6,5,global,5,127,7,35,162,#0060F6
+Privacy Designers,"Research Software Engineers, Academic Research Community, Open Source Software, Data Scientists, Cybersecurity Professionals",,6,6,global,5,96,6,30,126,#FF174B
+Academic Librarians,"Scholarly Research Circles, K-12 Educators, Science Communicators, Computational Humanities Consortium, Digital Archivists",,4,5,regional,5,113,7,35,148,#D200B9
+Slow Craft,"Contemporary Artisan Movement, Cooperative Housing, Urban Homesteaders, Minimalist Living",,6,6,global,4,107,6,24,131,#FF8900
+Plant-based Living,"Urban Gardening Community, Sustainable Living, Vegans, Fitness Culture, Green Movement",,4,6,global,5,93,6,30,123,#5B2BFF
+Science Communicators,"Academic Research Community, K-12 Educators, Participatory Democracy, Theatre Culture, Data Visualization Professionals, Social Justice Activists",,5,6,global,6,115,6,36,151,#A56DFF
+Film Photographers,"Maker Culture, Analog Synthesis Circle, Zine Culture, Lumen Printmakers Guild, Legacy Hardware Collectors, Digital Archivists, Slow Craft",,4,6,national,7,107,6,42,149,#00AB92
+Interfaith Earth Communion,"Engaged Buddhism, Environmental Activism, Interspirituality, Progressive Christianity, Unitarian Universalism, Neopaganism",,6,7,global,6,97,6,36,133,#E784FF
+Comic Creators,"Cosplay Community, Sff Fans, Zine Culture, Digital Content Creators",,6,6,global,4,117,6,24,141,#0081A4
+Buddhists,"Secular Mindfulness, Engaged Buddhism, Social Justice Activists, Interspirituality",,4,6,global,4,82,6,24,106,#9671FF
+K-12 Educators,"Academic Research Community, Academic Librarians, Science Communicators, Progressive Civic Alliance, Social Justice Activists, Digital Content Creators, Participatory Democracy",,4,4,national,7,186,8,56,242,#EC0078
+Research Software Engineers,"Coding Community, Open Source Maintainers, Open Source Software, Digital Archivists, Data Scientists",,6,6,global,5,126,6,30,156,#FF9B00
+Gaianism,"Quakerism, Interfaith Earth Communion, Sustainable Living, Environmental Activism",,5,7,global,4,103,6,24,127,#3F31FE
+Engaged Buddhism,"Environmental Activism, Academic Research Community, Interspirituality, Social Justice Activists, Mindful Living",,4,6,national,5,142,7,35,177,#FF0044
+Sufism,"South Asian, Judaism, Persian, Middle Eastern, Interspirituality",,4,5,global,5,78,7,35,113,#F60030
+Progressive Christianity,"Unitarian Universalism, Roman Catholicism, Social Justice Activists, Progressive Civic Alliance, Black Lives Matter, Interspirituality, Participatory Democracy",,6,7,global,7,140,7,49,189,#FF505C
+Roman Catholicism,"Social Justice Activists, Participatory Democracy, Evangelical Christianity, Eastern Orthodoxy, Healthcare Workers",,2,5,global,5,97,7,35,132,#009280
+Eastern Orthodoxy,"Roman Catholicism, Quakerism, Judaism",,2,3,global,3,77,8,24,101,#E74EFF
+Evangelical Christianity,"Progressive Christianity, Quakerism, Roman Catholicism, Latter-day Saints, Social Justice Activists, Black Lives Matter",,3,6,global,6,199,7,42,241,#F60000
+Interspirituality,"Indigenous Spirituality, Ecumenical Nature Spirituality, Hinduism, Quakerism",,7,6,national,4,97,6,24,121,#FF58E1
+Judaism,"Black Lives Matter, Unitarian Universalism, Academic Research Community, Progressive Christianity, Social Justice Activists",,3,3,global,5,145,9,45,190,#C7006C
+Sikhism,"Unitarian Universalism, Progressive Civic Alliance, Interfaith Earth Communion, Hinduism, Vegetarianism, Islam",,2,5,global,6,164,8,48,212,#FF1070
+Latter-day Saints,"Evangelical Christianity, Roman Catholicism, Academic Research Community, Digital Archivists, Academic Librarians, Participatory Democracy, K-12 Educators, Quakerism",,3,5,global,8,192,8,64,256,#B319ED
+Bahá'í Faith,"Interfaith Earth Communion, Interspirituality, Islam, Social Justice Activists, Progressive Christianity",,3,6,global,5,131,6,30,161,#FF4871
+Neopaganism,"Ecumenical Nature Spirituality, Climate Justice, Plant-based Living",,6,5,global,3,40,7,21,61,#008CA1
+Unitarian Universalism,"Quakers, Interspirituality, Social Justice Activists, Buddhism, Neopaganism, Progressive Civic Alliance, Climate Justice",,7,7,global,7,124,6,42,166,#817FFF
+Quakers,"Progressive Christianity, Interspirituality, Roman Catholicism, Civil Rights",,6,5,global,4,103,7,28,131,#00A993
+Mexican American,"Indigenous North Americans, Street Art, Roman Catholicism, Culinary Culture, American, African Diaspora",,6,5,global,6,121,7,42,163,#00E31C
+African Diaspora,"British, Nigerian, Latino, American",,4,3,global,4,125,8,32,157,#9100D4
+South Asian,"Middle Eastern, British, Central Asian, Southeast Asian, Islam",,4,5,global,5,103,7,35,138,#6781FF
+Filipino,"Latino, East Asian, Pacific Islander, Spaniards, Roman Catholicism",,4,6,global,5,105,6,30,135,#F80028
+Latino,"Mexican American, Brazilian, American, Portuguese, Spaniards, Indigenous North Americans",,5,6,global,6,105,6,36,141,#8EA1FF
+Jewish,"American, Persian, Islam, Eastern European, Spaniards",,3,3,global,5,109,8,40,149,#D30000
+East Asian,"Anime Fandom, K-pop Fandom, Southeast Asian, Buddhism",,4,5,global,4,48,7,28,76,#C05EFF
+Middle Eastern,"Sufism, Persian, French",,4,3,global,3,39,8,24,63,#0068FF
+Southeast Asian,"Pacific Islander, American, Buddhism, South Asian",,4,6,global,4,76,6,24,100,#F9B200
+Eastern European,"Eastern Orthodoxy, Roman Catholicism, American, British, Germans",,4,5,global,5,39,7,35,74,#00858F
+Indigenous North Americans,"Academic Research Community, Environmental Activism, Climate Justice, Interfaith Earth Communion",,5,3,global,4,86,8,32,118,#E38C00
+Nordic,"Environmental Activism, British, Sustainable Living",,4,6,global,3,33,6,18,51,#AD1BF1
+British,"Nordic, South Asian, Eastern European, Canadians, French",,5,6,global,5,38,6,30,68,#FF8100
+Brazilian,"Portuguese, African Diaspora, Italian, Middle Eastern, East Asian, Roman Catholicism",,5,4,global,6,82,7,42,124,#C9005B
+Kenyan,"Canadians, American, British, Middle Eastern, African Diaspora, Somalis",,4,5,global,6,95,7,42,137,#F13DF2
+Nigerian,"African Diaspora, Canadians, American, Kenyan, British",,4,5,global,5,103,7,35,138,#F20000
+Greek,"Canadians, American, Eastern Orthodoxy, Eastern European",,4,4,global,4,57,7,28,85,#FF5333
+Persian,"Middle Eastern, Islam, Canadians, South Asian, British, American",,5,4,global,6,64,7,42,106,#C4006C
+Portuguese,"Brazilian, American, Canadians, French, Spaniards",,4,5,national,5,54,7,35,89,#D857FF
+Central Asian,"Middle Eastern, Islam, South Asian, Persian",,4,4,global,4,99,7,28,127,#5F8600
+Pacific Islander,"American, Southeast Asian, Environmental Activism, Climate Justice, Roman Catholicism, Evangelical Christianity, Canadians",,4,5,global,7,140,8,56,196,#FF5EFF
+American,"South Asian, African Diaspora, Indigenous North Americans",,7,6,national,3,32,6,18,50,#0085B4
+Green Progressive,"Sustainable Living, Participatory Democracy, Solidarity Economy, Cooperative Housing, Urban Homesteaders",,6,6,global,5,117,6,30,147,#00B5FF
+Italian,"Germans, Brazilian, Spaniards, French, Portuguese, British",,4,4,global,6,54,7,42,96,#00A34F
+Healthcare Workers,"Academic Research Community, Progressive Civic Alliance, Data Scientists",,5,4,global,3,63,7,21,84,#00EA7A
+Germans,"Italian, French, African Diaspora, Eastern European, Jewish, Nordic, Middle Eastern",,4,4,global,7,100,7,49,149,#007CA7
+French,"Middle Eastern, Spaniards, Italian, Canadians, Germans",,4,4,global,5,75,7,35,110,#FF10A7
+Spaniards,"Roman Catholicism, Portuguese, Italian, Latino",,4,5,global,4,70,7,28,98,#3C5DFF
+Somalis,"Sufism, American, Kenyan, African Diaspora, British, Middle Eastern",,5,3,global,6,132,8,48,180,#FAB600
+Canadians,"Latino, African Diaspora, East Asian, Middle Eastern, Indigenous North Americans",,5,6,global,5,56,6,30,86,#D50000

@@ -1,0 +1,62 @@
+Name,Kinships,Affiliation,Knowledgebase,Openness,Scope,Sides,InteriorParticleCount,ParticlesPerEdge,BorderParticleCount,TotalParticleCount,Color
+Urban Ecologist,"Indigenous Land Defenders, Maker Culture, Japanese",,1,1,local,3,172,10,30,202,#FE7B00
+Western North Carolinian,"Anime Fans, Mapuche, Indie Music Collectors",,6,6,regional,3,80,6,18,98,#009EAB
+White,"Anime Fans, Mapuche, Indie Music Collectors",,1,7,global,3,146,7,21,167,#FF9AFF
+French,"Italian, Anime Fans, Mapuche",,3,1,national,3,60,9,27,87,#0080A3
+Parents,"Plant Parents, Anime Fans, Mapuche",,4,1,global,3,101,9,27,128,#00D88A
+Japanese,"Japanese Tea Ceremony, Japanese Zen Gardening, Anime Fans",,4,2,national,3,80,8,24,104,#C64F00
+Navajo,"Indigenous Land Defenders, Anime Fans, Mapuche",,5,3,local,3,111,8,24,135,#7EDB00
+Italian,"Slow Food Movement, Culinary Explorers, Italian Folk Musicians",,3,2,national,3,80,8,24,104,#D40000
+Zulu,"Rastafari, Samba Dancers, Indigenous Land Defenders, Ghanaian",,4,3,local,4,63,8,32,95,#BDA200
+Sámi,"Indigenous Australian Artists, Māori, Mapuche, Navajo",,5,4,local,4,78,7,28,106,#0097E3
+Brazilian,"Ghanaian, Zulu, Samba Dancers, Indigenous Land Defenders, Mapuche",,3,3,national,5,63,8,40,103,#8BE800
+Māori,"Sámi, Navajo, Indigenous Land Defenders, Indigenous Australian Artists",,4,5,national,4,99,7,28,127,#0064E7
+Ghanaian,"Rastafari, Samba Dancers, Salsa Dance Community, Brazilian",,5,6,national,4,65,6,24,89,#7CBB00
+Kurdish,"Feminist Scholars, Mapuche, Indigenous Land Defenders, Basque",,5,6,regional,4,89,6,24,113,#D025B9
+Punjabi,"Indian Street Artists, Slow Food Movement, Maker Culture, Street Art Collective, Feminist Scholars",,4,5,regional,5,73,7,35,108,#00F78D
+Romani,"Basque, Indie Music Collectors, Digital Nomads, Street Art Collective",,3,5,global,4,71,7,28,99,#DD0045
+K-pop Fans,"Anime Fans, Otaku, Gamers, Indie Music Collectors, Podcast Creators, Virtual Reality Enthusiasts",,5,2,global,6,157,9,54,211,#00DB71
+Hiking Enthusiasts,"Urban Foragers, Eco-conscious Consumers, Indigenous Land Defenders, Astrophotography, Digital Nomads, Coffee Enthusiasts",,6,3,local,6,146,9,54,200,#D66300
+Tabletop Rpg Players,"Board Gamers, Gamers, D&d Lorekeepers, Board Game Creators, Podcast Creators, Anime Fans",,4,2,local,6,184,9,54,238,#FFAE00
+Knitting Circle,"Craft Beer Enthusiasts, Maker Culture, Eco-conscious Consumers, Urban Foragers, Baking",,5,4,local,5,129,7,35,164,#CE1C00
+Street Art Collective,"Indian Street Artists, Indigenous Australian Artists, Indigenous Land Defenders, Maker Culture, Samba Dancers, Salsa Dance Community, Podcast Creators",,6,3,local,7,158,9,63,221,#FF7A00
+Coffee Enthusiasts,"Craft Beer Enthusiasts, Culinary Explorers, Eco-conscious Consumers, Urban Foragers, Baking, Indie Music Collectors, Podcast Creators",,4,4,local,7,146,8,56,202,#9D8700
+Anime Fans,"K-pop Fans, Gamers, Tabletop Rpg Players, Board Gamers, Podcast Creators, Virtual Reality Enthusiasts, Indie Music Collectors",,6,4,local,7,153,8,56,209,#00F9FF
+Board Gamers,"Tabletop Rpg Players, Gamers, Board Game Creators, D&d Lorekeepers, Podcast Creators, Fantasy Role-playing, Anime Fans",,5,4,local,7,145,8,56,201,#009300
+Gamers,"Board Gamers, Podcast Creators, Tabletop Rpg Players, D&d Lorekeepers, Virtual Reality Enthusiasts, Board Game Creators",,6,5,global,6,188,8,48,236,#EF5BFF
+Mapuche,"Kurdish, Indian Street Artists, Sámi, Indigenous Australian Artists, Māori",,7,3,local,5,148,9,45,193,#E0009A
+Basque,"Italian Folk Musicians, Indigenous Land Defenders, Kurdish, Street Art Collective, Mapuche",,5,4,local,5,112,7,35,147,#A1DB00
+Rastafari,"Ghanaian, Eco-conscious Consumers, Indie Music Collectors, Samba Dancers, Salsa Dance Community, Indigenous Land Defenders",,2,4,global,6,162,8,48,210,#C40088
+Otaku,"Gamers, K-pop Fandom, Virtual Reality Enthusiasts, Podcast Creators, Japanese, Japanese Tea Ceremony",,7,5,global,6,143,8,48,191,#E89C00
+Rugby Union Fans,"Craft Beer Enthusiasts, Podcast Creators, Data Scientists, Gamers, Street Art Collective, Sustainable Fashion",,5,4,local,6,151,8,48,199,#00A200
+Samba Dancers,"Salsa Dance Community, Rastafari, Maker Culture, Sustainable Fashion, Street Art Collective, Craft Beer Enthusiasts",,6,6,local,6,161,7,42,203,#F98AFF
+Maker Culture,"Tech Startups, Data Scientists, Sustainable Fashion, Street Art Collective, Board Game Creators, Virtual Reality Enthusiasts, Eco-conscious Consumers, Podcast Creators",,7,6,local,8,168,7,56,224,#494BFB
+Data Scientists,"Tech Startups, Maker Culture, Digital Nomads, Virtual Reality Enthusiasts, Podcast Creators",,5,4,global,5,185,8,40,225,#00CA00
+Feminist Scholars,"Indigenous Land Defenders, Queer Book Club, Sustainable Fashion, Slow Food Movement, Podcast Creators, Indigenous Australian Artists",,6,2,global,6,239,9,54,293,#00A69F
+Indigenous Land Defenders,"Māori, Sámi, Navajo, Mapuche, Indigenous Australian Artists, Urban Ecologist",,5,2,local,6,260,10,60,320,#E385FF
+Digital Nomads,"Tech Startups, Data Scientists, Podcast Creators, Culinary Explorers, Coffee Enthusiasts, Virtual Reality Enthusiasts",,4,4,global,6,159,8,48,207,#BC00BB
+Indian Street Artists,"Maker Culture, Indigenous Australian Artists, Indigenous Land Defenders, Samba Dancers, Salsa Dance Community",,5,5,local,5,211,8,40,251,#E59E00
+Japanese Tea Ceremony,"Japanese Zen Gardening, Slow Food Movement, Culinary Explorers, Coffee Enthusiasts, Maker Culture",,4,3,local,5,136,8,40,176,#DF007E
+Italian Folk Musicians,"Samba Dancers, Salsa Dance Community, Celtic Reconstructionism, Indie Music Collectors, Slow Food Movement, Podcast Creators",,6,5,local,6,175,8,48,223,#FF79FF
+Indigenous Australian Artists,"Indigenous Land Defenders, Māori, Sámi, Navajo, Mapuche, Indian Street Artists",,3,2,local,6,195,9,54,249,#0041FE
+Slow Food Movement,"Eco-conscious Consumers, Urban Foragers, Culinary Explorers, Craft Beer Enthusiasts, Urban Ecologist, Plant Parents",,5,4,local,6,52,7,42,94,#FF41EA
+Salsa Dance Community,"Italian Folk Musicians, K-pop Fans, Brazilian, Samba Dancers",,4,3,local,4,84,8,32,116,#00A7E4
+K-pop Fandom,"K-pop Fans, Anime Fans, Otaku, Indie Music Collectors, Gamers",,6,5,global,5,80,7,35,115,#00F95D
+Celtic Reconstructionism,"Mapuche, Sámi, Indigenous Land Defenders",,5,3,local,3,89,8,24,113,#C30000
+Japanese Zen Gardening,"Japanese Tea Ceremony, Plant Parents, Urban Ecologist, Urban Foragers, Maker Culture",,4,4,local,5,159,8,40,199,#3C8AFF
+Queer Book Club,"Feminist Scholars, Indie Music Collectors, Podcast Creators",,6,5,local,3,29,7,21,50,#0097FF
+Craft Beer Enthusiasts,"Eco-conscious Consumers, Coffee Enthusiasts, Slow Food Movement",,7,4,local,3,71,7,21,92,#FF72FF
+Sustainable Fashion,"Maker Culture, Urban Ecologist, Slow Food Movement, Urban Foragers, Plant Parents, Indigenous Land Defenders",,5,6,local,6,71,6,36,107,#0082D6
+Fantasy Role-playing,"Podcast Creators, Otaku, Board Gamers, Anime Fans, Gamers, Board Game Creators",,4,5,local,6,106,7,42,148,#D6A400
+Baking,"Slow Food Movement, Coffee Enthusiasts, Urban Foragers, Eco-conscious Consumers",,5,6,global,4,124,6,24,148,#AE7E00
+Astrophotography,"Data Scientists, Maker Culture, Tech Startups, Virtual Reality Enthusiasts, Podcast Creators, Digital Nomads, Urban Ecologist, Gamers",,6,5,local,8,173,8,64,237,#D78FFF
+Board Game Creators,"Tabletop Rpg Players, Maker Culture, Indian Street Artists, Tech Startups, D&d Lorekeepers",,7,5,local,5,154,8,40,194,#C52800
+Urban Foragers,"Sustainable Fashion, Plant Parents, Urban Ecologist, Slow Food Movement, Culinary Explorers",,5,4,local,5,108,7,35,143,#FF6800
+D&d Lorekeepers,"Fantasy Role-playing, Board Gamers, Board Game Creators, Podcast Creators, Anime Fans, Otaku, Gamers, Queer Book Club",,6,4,global,8,113,7,56,169,#5262FF
+Podcast Creators,"Indie Music Collectors, Tech Startups, Data Scientists, Virtual Reality Enthusiasts, Gamers, Board Gamers, Queer Book Club, Anime Fans",,5,6,local,8,180,7,56,236,#73B7FF
+Eco-conscious Consumers,"Sustainable Fashion, Slow Food Movement, Urban Foragers, Culinary Explorers, Plant Parents, Urban Ecologist, Maker Culture, Coffee Enthusiasts",,6,5,local,8,137,7,56,193,#C60098
+Plant Parents,"Japanese Tea Ceremony, Sustainable Fashion, Slow Food Movement",,5,6,local,3,58,6,18,76,#C2B000
+Indie Music Collectors,"Street Art Collective, Maker Culture, Podcast Creators, K-pop Fandom, Virtual Reality Enthusiasts, Tech Startups",,6,5,global,6,63,7,42,105,#CC1BE3
+Tech Startups,"Eco-conscious Consumers, Gamers, Virtual Reality Enthusiasts, Maker Culture, Digital Nomads, Urban Ecologist, Data Scientists",,6,5,local,7,200,8,56,256,#00F9FF
+Culinary Explorers,"Sustainable Fashion, Urban Foragers, Plant Parents, Slow Food Movement",,5,4,global,4,50,7,28,78,#009100
+Virtual Reality Enthusiasts,"Gamers, Tech Startups, Digital Nomads, Data Scientists, Anime Fans, Otaku, Board Game Creators, Street Art Collective",,6,5,global,8,128,7,56,184,#FF362C

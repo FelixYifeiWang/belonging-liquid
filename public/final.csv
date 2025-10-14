@@ -1,0 +1,82 @@
+Name,Kinships,Affiliation,Knowledgebase,Openness,Scope,Sides,InteriorParticleCount,ParticlesPerEdge,BorderParticleCount,TotalParticleCount,Color,Language
+Urban Ecologist,"Indigenous Land Defenders, Japanese, Makers, Urban Foragers, Zen Gardening, Eco-conscious Consumers",,1,1,global,6,168,10,60,228,#00ABFF,3
+Western North Carolinian,"Celtic, Japanese, Chinese, Ghanaian",,6,6,regional,4,67,6,24,91,#E03748,2
+White,"French, Italian, Harvard Alum, Immigrants",,1,7,regional,4,90,6,24,114,#FF98FF,1
+French,"Italian, Catalan, Chinese",,3,1,national,3,67,9,27,94,#0060E6,4
+Parents,"Eco-conscious Consumers, International Students, Baking",,4,1,global,3,53,9,27,80,#00D083,2
+Japanese,"South Korean, Chinese, Zen Gardening, Japanese Tea Ceremony, Anime Fans, Manga Fans",,4,2,national,6,78,8,48,126,#B72CC0,5
+Navajo,"Indigenous Land Defenders, Māori, Sámi, Chilean Mapuche, Indigenous Australian Art",Indigenous Land Defenders,5,3,local,5,78,8,40,118,#FF6C7B,5
+Italian,"French, Slow Food, Sustainable Fashion, Italian Folk Musicians, Culinary Explorers",,3,2,national,5,67,8,40,107,#008E00,4
+Zulu,"Rastafari, Samba Dancers, Māori, Indigenous Land Defenders",,4,3,local,4,76,8,32,108,#FF3500,5
+Sámi,"Māori, Navajo, Eco-conscious Consumers, Indigenous Australian Art",Indigenous Land Defenders,5,4,local,4,70,7,28,98,#F50041,5
+Brazilian,"Chilean Mapuche, Māori, Zulu, Ghanaian, Salsa Dance",,3,3,national,5,56,8,40,96,#EA95FF,4
+Māori,"Indigenous Australian Art, Sámi, Navajo",Indigenous Land Defenders,4,5,regional,3,69,7,21,90,#9701BB,4
+Ghanaian,"Rastafari, Samba Dancers, Latino",,5,6,national,3,56,6,18,74,#FF168E,3
+Kurdish,"Chilean Mapuche, Catalan, Basque Nationalists",,5,6,regional,3,58,6,18,76,#E43E00,4
+Punjabi,"International Students, Slow Food, Indian Street Artists, Sustainable Fashion, Makers",,4,5,regional,5,65,7,35,100,#E08EFF,3
+Romani,"Makers, Kurdish, Immigrants",,3,5,global,3,58,7,21,79,#B400C0,5
+K-pop Fans,"K-pop, Anime Fans, Manga Fans",K-pop,5,2,regional,3,143,9,27,170,#FF5600,4
+Hiking Enthusiasts,"Coffee Enthusiasts, Board Game Enthusiasts, Virtual Reality Enthusiasts",,6,3,local,3,148,9,27,175,#D219DF,2
+Tabletop Rpg Players,"Anime Fans, Brown University Alum, Indie Music Collectors",Board Game Enthusiasts,4,2,regional,3,90,8,24,114,#FF7CFF,3
+Knitting Circle,"Anime Fans, Brown University Alum, Indie Music Collectors",Makers,5,4,local,3,123,7,21,144,#9D6200,3
+Street Art Collective,"Indian Street Artists, Indigenous Australian Art, Anime Fans",,6,3,regional,3,139,8,24,163,#EB60FF,2
+Coffee Enthusiasts,"Hiking Enthusiasts, Board Game Enthusiasts, Virtual Reality Enthusiasts",Culinary Explorers,4,4,local,3,95,7,21,116,#0095FF,3
+Anime Fans,"Anime Lover, Manga Fans, K-pop Fans",Anime Lover,6,4,local,3,30,7,21,51,#FF8700,5
+Board Game Enthusiasts,"Tabletop Rpg Players, Board Game Creators, Hiking Enthusiasts",,5,4,national,3,150,8,24,174,#D60076,3
+Gamer Culture,"Tech Startups, Manga Fans, D&d Lore, Tabletop Rpg Players, Fantasy Roleplaying, Board Game Enthusiasts, Virtual Reality Enthusiasts",,6,5,global,7,83,7,49,132,#F05AFF,4
+Chilean Mapuche,"Sámi, Catalan, Indigenous Australian Art",Indigenous Land Defenders,7,3,local,3,59,8,24,83,#F6002A,5
+Basque Nationalists,"Celtic, Kurdish, Indigenous Land Defenders, Chilean Mapuche",,5,4,local,4,59,7,28,87,#FF7600,5
+Rastafari,"Brazilian, Eco-conscious Consumers, Zulu, Indigenous Land Defenders",,2,4,global,4,75,7,28,103,#DD0019,5
+Manga Fans,"Virtual Reality Enthusiasts, K-pop Fans, Podcast Creators, Anime Lover",Anime Fans,7,5,regional,4,51,7,28,79,#FF4DFA,3
+Rugby Union Fans,"French, Argentinian, International Students, Podcast Creators, Craft Beer",,5,4,local,5,97,7,35,132,#9A34FF,3
+Samba Dancers,"Salsa Dance, Makers, Sustainable Fashion, Street Art Collective, Indie Music Collectors, Podcast Creators, Eco-conscious Consumers",Brazilian,6,6,local,7,97,6,42,139,#00FCAA,4
+Makers,"Digital Nomads, Street Art Collective, Eco-conscious Consumers, Slow Food, Data Scientists",,7,6,global,5,101,6,30,131,#009500,4
+Data Scientists,"Neuroscientist, Tech Startups, Virtual Reality Enthusiasts, International Students, Gamer Culture, Podcast Creators",Tech Startups,5,4,regional,6,176,8,48,224,#DF9200,3
+Feminist Scholars,"Podcast Creators, Queer Literature, Sustainable Fashion, Immigrants, Parents",,6,2,global,5,158,9,45,203,#00A969,4
+Indigenous Land Defenders,"Indigenous Australian Art, Navajo, Māori, Sámi, Chilean Mapuche, Basque Nationalists, Eco-conscious Consumers",,5,2,national,7,227,9,63,290,#FF8100,5
+Digital Nomads,"Tech Startups, Startup Founders, Data Scientists, International Students, Culinary Explorers, Virtual Reality Enthusiasts, Podcast Creators, Makers",Tech Startups,4,4,regional,8,129,7,56,185,#008F00,3
+Indian Street Artists,"Indigenous Land Defenders, Urban Ecologist, Samba Dancers, Sustainable Fashion, Rapper, Makers",Street Art Collective,5,5,local,6,184,8,48,232,#00D718,3
+Japanese Tea Ceremony,"Plant Parents, Makers, Chinese, Zen Gardening, Sustainable Fashion",Japanese,4,3,local,5,127,8,40,167,#8A7700,4
+Italian Folk Musicians,"Turkish Jazz, Salsa Dance, French, Celtic, Indie Music Collectors, Celtic Reconstructionism",Italian,6,5,local,6,174,8,48,222,#FF8C00,4
+Indigenous Australian Art,"Navajo, Indian Street Artists, Sámi, Urban Ecologist, Māori, Chilean Mapuche",Indigenous Land Defenders,3,2,local,6,184,9,54,238,#CD0070,5
+Slow Food,"Culinary Explorers, Sustainable Fashion, Eco-conscious Consumers, Urban Foragers, Craft Beer",Eco-conscious Consumers,5,4,local,5,106,7,35,141,#FF3200,3
+Salsa Dance,"Argentinian, K-pop Fans, Indie Music Collectors, Samba Dancers, K-pop, Brazilian",Brazilian,4,3,local,6,160,9,54,214,#FC1800,2
+K-pop,"Indie Music Collectors, Anime Lover, Podcast Creators, K-pop Fans, South Korean",South Korean,6,5,regional,4,92,7,28,120,#FB8AFF,3
+Celtic Reconstructionism,"Sámi, Indigenous Australian Art, Indigenous Land Defenders, Māori, Basque Nationalists",Celtic,5,3,local,5,147,9,45,192,#008500,3
+Zen Gardening,"Urban Ecologist, Urban Foragers, Japanese Tea Ceremony, Makers, Indigenous Australian Art",Japanese,4,4,local,5,145,8,40,185,#BC9B00,3
+Queer Literature,"Feminist Scholars, International Students, Mexican Latina, Latino, Immigrants, Podcast Creators",,6,5,local,6,87,7,42,129,#7F9000,2
+Craft Beer,"Slow Food, Eco-conscious Consumers, Urban Foragers, Podcast Creators",Culinary Explorers,7,4,local,4,108,7,28,136,#C09FFF,3
+Sustainable Fashion,"Makers, Slow Food, Craft Beer, Indigenous Land Defenders, Tech Startups, Startup Founders, Street Art Collective",,5,6,local,7,183,7,49,232,#C13A00,3
+Fantasy Roleplaying,"Anime Fans, Brown University Alum, Indie Music Collectors",,4,5,national,3,90,7,21,111,#FF4400,3
+Baking,"Anime Fans, Brown University Alum, Indie Music Collectors",Culinary Explorers,5,6,local,3,154,7,21,175,#F80089,3
+Astrophotography,"Anime Fans, Brown University Alum, Indie Music Collectors",,6,5,global,3,163,8,24,187,#FF79FF,3
+Board Game Creators,"Board Game Enthusiasts, Podcast Creators, Anime Fans",Board Game Enthusiasts,7,5,local,3,169,8,24,193,#DD004D,2
+Urban Foragers,"Urban Ecologist, Anime Fans, Brown University Alum",Urban Ecologist,5,4,national,3,138,7,21,159,#6590FF,3
+D&d Lore,"Anime Fans, Brown University Alum, Indie Music Collectors",Tabletop Rpg Players,6,4,local,3,150,8,24,174,#EB4100,3
+Podcast Creators,"Board Game Creators, Anime Fans, Brown University Alum",Makers,5,6,national,3,163,7,21,184,#FF6E00,3
+Eco-conscious Consumers,"Anime Fans, Brown University Alum, Indie Music Collectors",,6,5,global,3,123,7,21,144,#E0002F,3
+Plant Parents,"Makers, Sustainable Fashion, Hiking Enthusiasts, Zen Gardening, Urban Foragers, Eco-conscious Consumers",Parents,5,6,local,6,135,6,36,171,#00BEFF,2
+Indie Music Collectors,"Podcast Creators, Street Art Collective, Italian Folk Musicians, Samba Dancers, Rapper, K-pop Fans",,6,5,regional,6,218,8,48,266,#E05400,3
+Tech Startups,"Startup Founders, Gamer Culture, Virtual Reality Enthusiasts, Makers, Digital Nomads, Data Scientists",,6,5,global,6,176,8,48,224,#FF5CBC,4
+Culinary Explorers,"Sustainable Fashion, Urban Foragers, International Students, Coffee Enthusiasts, Baking, Craft Beer",,5,4,national,6,137,7,42,179,#008D00,3
+Virtual Reality Enthusiasts,"Tech Startups, Makers, Gamer Culture, Data Scientists, Digital Nomads, Indie Music Collectors, Podcast Creators",Gamer Culture,6,5,national,7,190,8,56,246,#E0A100,3
+Mexican Latina,"Argentinian, Brazilian, Salsa Dance, Indigenous Land Defenders, Culinary Explorers, Street Art Collective, Immigrants",Latino,7,7,local,7,260,8,56,316,#B724F3,1
+Turkish Jazz,"French, Podcast Creators, Kurdish, Indie Music Collectors, Street Art Collective",Indie Music Collectors,5,5,local,5,98,7,35,133,#FFB200,4
+Argentinian,"Brazilian, Mexican Latina, Salsa Dance, Rugby Union Fans, Immigrants, Feminist Scholars, Street Art Collective, Latino",Latino,3,4,national,7,164,8,56,220,#009800,1
+Latino,"Salsa Dance, Mexican Latina, Brazilian",,6,5,national,3,29,7,21,50,#FF5600,1
+Celtic,"Chilean Mapuche, Māori, Basque Nationalists",,4,7,regional,3,32,6,18,50,#A72EFF,5
+South Korean,"International Students, Chinese, Tech Startups, K-pop",,2,5,national,4,22,7,28,50,#F2B100,5
+Michigan Wolverine,"Tech Startups, Harvard Alum, Data Scientists, International Students",,2,6,local,4,45,6,24,69,#0052FF,2
+Catalan,"International Students, French, Basque Nationalists, Italian",,3,5,national,4,50,7,28,78,#8281FF,3
+Chinese,"South Korean, Data Scientists, Makers, Gamer Culture, Japanese",,6,5,national,5,42,7,35,77,#7D39FF,4
+Gamer,"D&d Lore, Tabletop Rpg Players, Board Game Enthusiasts, Board Game Creators",,2,1,global,4,84,9,36,120,#FF6AFF,2
+Anime Lover,"Japanese, Gamer Culture, Manga Fans",,2,1,global,3,47,9,27,74,#BF00B5,3
+International Students,"Immigrants, Harvard Alum, Brown University Alum, Anime Fans, K-pop Fans",Immigrants,2,2,regional,5,200,9,45,245,#8CBC00,3
+Brown University Alum,"Harvard Alum, Startup Founders, Tech Startups, Data Scientists, Feminist Scholars",,4,6,global,5,89,6,30,119,#009E00,2
+Rapper,"Street Art Collective, Turkish Jazz, Makers, Sustainable Fashion, Podcast Creators",,2,2,global,5,177,9,45,222,#FF7800,3
+Neuroscientist,"Data Scientists, Tech Startups, Startup Founders, Virtual Reality Enthusiasts, Nobel Laureate",,3,5,global,5,177,8,40,217,#3632FC,5
+Startup Founders,"Makers, Data Scientists, Digital Nomads, Podcast Creators, Virtual Reality Enthusiasts, Board Game Creators",Tech Startups,2,2,national,6,223,9,54,277,#00AFFF,3
+Harvard Alum,"Feminist Scholars, Startup Founders, Tech Startups, International Students, Brown University Alum, Data Scientists",,5,6,global,6,101,6,36,137,#3E58FF,2
+Nobel Laureate,"International Students, Queer Literature, Feminist Scholars, Harvard Alum, Brown University Alum, Neuroscientist, Data Scientists",,4,7,global,7,123,6,42,165,#FF8A00,5
+Immigrants,"International Students, Startup Founders, Tech Startups, Digital Nomads, Harvard Alum, Brown University Alum",,2,2,global,6,220,9,54,274,#B34500,3
+Adhd,"Makers, Tech Startups, Startup Founders, Parents, Podcast Creators, Neuroscientist",,2,3,global,6,160,9,54,214,#FF4700,3
