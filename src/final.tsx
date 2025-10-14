@@ -1900,12 +1900,9 @@ const KinshipVisualization = () => {
           c.scopeLevel === selectedScope && c.opacity > 0.1
         );
         
-        // Determine what scope level is 1 level higher
+        // Define scope hierarchy for comparison
         const scopeHierarchy = ['family', 'local', 'regional', 'national', 'global'];
         const currentScopeIndex = scopeHierarchy.indexOf(selectedScope);
-        const parentScopeLevel = currentScopeIndex >= 0 && currentScopeIndex < scopeHierarchy.length - 1 
-          ? scopeHierarchy[currentScopeIndex + 1] 
-          : null;
         
         // Group children by their parent affiliation
         const parentGroups = new Map();
@@ -1913,13 +1910,21 @@ const KinshipVisualization = () => {
           if (culture.affiliations && culture.affiliations.length > 0) {
             const parentName = culture.affiliations[0];
             
-            // Find the actual parent culture to verify it's 1 level higher
-            const parentCulture = culturesDataRef.current.find(c => 
-              c.name === parentName && !c.isParentGroup
-            );
+            // Find the actual parent culture
+            const allCultures = culturesDataRef.current.filter(c => !c.isParentGroup);
+            const parentCulture = allCultures.find(c => c.name === parentName);
             
-            // Only create parent group if parent is exactly 1 level higher
-            if (parentCulture && parentCulture.scopeLevel === parentScopeLevel) {
+            if (!parentCulture) {
+              return; // Parent doesn't exist in dataset
+            }
+            
+            // Check if parent is at least 1 level higher in the hierarchy
+            const childScopeIndex = scopeHierarchy.indexOf(culture.scopeLevel);
+            const parentScopeIndex = scopeHierarchy.indexOf(parentCulture.scopeLevel);
+            
+            // Parent must be at higher scope (lower index = broader/higher scope)
+            // This allows parents that are 1+ levels higher
+            if (parentScopeIndex >= 0 && childScopeIndex >= 0 && parentScopeIndex > childScopeIndex) {
               if (!parentGroups.has(parentName)) {
                 parentGroups.set(parentName, []);
               }
@@ -2219,7 +2224,7 @@ const KinshipVisualization = () => {
       
       drawParticles(ctx, time);
       
-      ctx.font = 'bold 16px system-ui, sans-serif';
+      ctx.font = 'bold 16px IAAB3Mono, monospace';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       
@@ -2230,7 +2235,7 @@ const KinshipVisualization = () => {
         // Show name for regular cultures only (parent groups use cursor tooltip)
         if (!culture.isParentGroup && (renderOpacity > 0.6 || isHovered)) {
           const fontSize = culture.layer === 3 ? 22 : 16;
-          ctx.font = `bold ${fontSize}px system-ui, sans-serif`;
+          ctx.font = `bold ${fontSize}px IAAB3Mono, monospace`;
           
           ctx.shadowColor = 'rgba(0, 0, 0, 0.9)';
           ctx.shadowBlur = 8;
@@ -3030,6 +3035,16 @@ const KinshipVisualization = () => {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, []);
 
+  // Font face declaration
+  const fontFaceStyles = `
+    @font-face {
+      font-family: 'IAAB3Mono';
+      src: url('/IAAB3Mono.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  `;
+
   // Gradient feedback animation styles
   const gradientAnimationStyles = `
     @keyframes panelRollOut {
@@ -3174,13 +3189,13 @@ const KinshipVisualization = () => {
       width: '100vw', 
       height: '100vh', 
       backgroundColor: '#000000',
-      display: 'flex',
-      flexDirection: 'column',
+      position: 'relative',
       color: 'white',
-      fontFamily: 'system-ui, sans-serif',
+      fontFamily: "'IAAB3Mono', monospace",
       overflow: 'hidden'
     }}>
-      {/* Add gradient animation styles */}
+      {/* Add font face and gradient animation styles */}
+      <style>{fontFaceStyles}</style>
       <style>{gradientAnimationStyles}</style>
       
       {cultures.length === 0 ? (
@@ -3204,9 +3219,12 @@ const KinshipVisualization = () => {
         <>
           {/* HEADER AREA */}
           <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
             height: '60px',
-            backgroundColor: 'rgba(0,0,0,0.95)',
-            borderBottom: '1px solid rgba(255,255,255,0.1)',
+            backgroundColor: 'transparent',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -3230,7 +3248,7 @@ const KinshipVisualization = () => {
                   </>
                 ) : (
                   <>
-                    {curatedActivities.length} activities curated
+                    {curatedActivities.length} cultures curated
                   </>
                 )}
               </div>
@@ -3243,26 +3261,23 @@ const KinshipVisualization = () => {
                 disabled={isExiting}
                 style={{
                   padding: '0.5rem 1.25rem',
-                  backgroundColor: isExiting ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  borderRadius: '6px',
-                  color: isExiting ? '#666' : '#999',
+                  backgroundColor: 'transparent',
+                  border: 'none',
+                  color: isExiting ? '#666' : 'white',
                   fontSize: '0.85rem',
                   fontWeight: '500',
                   cursor: isExiting ? 'not-allowed' : 'pointer',
-                  transition: 'all 0.2s',
-                  opacity: isExiting ? 0.5 : 1
+                  transition: 'opacity 0.2s',
+                  opacity: isExiting ? 0.3 : 0.7
                 }}
                 onMouseEnter={(e) => {
                   if (!isExiting) {
-                    e.target.style.backgroundColor = 'rgba(255,255,255,0.15)';
-                    e.target.style.color = 'white';
+                    e.target.style.opacity = '1';
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!isExiting) {
-                    e.target.style.backgroundColor = 'rgba(255,255,255,0.1)';
-                    e.target.style.color = '#999';
+                    e.target.style.opacity = '0.7';
                   }
                 }}
               >
@@ -3272,7 +3287,14 @@ const KinshipVisualization = () => {
           </div>
 
           {/* MAIN CONTENT AREA */}
-          <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
+          <div style={{ 
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            overflow: 'hidden' 
+          }}>
             
             {/* ============ EXPLORE MODE ============ */}
             {mode === 'explore' && (
@@ -3283,7 +3305,7 @@ const KinshipVisualization = () => {
                     className="search-container"
                     style={{
                       position: 'absolute',
-                      top: '1.5rem',
+                      top: '80px',
                       left: '1.5rem',
                       zIndex: 10,
                       width: '320px'
@@ -3305,7 +3327,7 @@ const KinshipVisualization = () => {
                           color: 'white',
                           fontSize: '0.9rem',
                           outline: 'none',
-                          fontFamily: 'system-ui, sans-serif',
+                          fontFamily: "'IAAB3Mono', monospace",
                           transition: 'all 0.2s'
                         }}
                         onFocus={(e) => {
@@ -3319,18 +3341,21 @@ const KinshipVisualization = () => {
                       />
                       
                       {/* Microscope Icon */}
-                      <div style={{
-                        position: 'absolute',
-                        right: '1rem',
-                        top: '50%',
-                        transform: 'translateY(-50%) scaleX(0.85)',
-                        pointerEvents: 'none',
-                        filter: 'brightness(0.7)',
-                        fontSize: '1.1rem',
-                        color: 'rgba(255,255,255,0.5)'
-                      }}>
-                        🔬
-                      </div>
+                      <img 
+                        src="/microscope.png" 
+                        alt="search"
+                        style={{
+                          position: 'absolute',
+                          right: '1rem',
+                          top: '50%',
+                          transform: 'translateY(-50%) scaleX(0.8)',
+                          pointerEvents: 'none',
+                          filter: 'invert(1) brightness(0.7)',
+                          width: '20px',
+                          height: '20px',
+                          opacity: 0.5
+                        }}
+                      />
                     </div>
                     
                     {/* Search Results Dropdown */}
@@ -3396,9 +3421,59 @@ const KinshipVisualization = () => {
                     zIndex: 10,
                     display: 'flex',
                     gap: '1rem',
-                    alignItems: 'center'
+                    alignItems: 'flex-start'
                   }}>
-                    {/* Increment/Decrement Buttons */}
+                    {/* Zoom Controls */}
+                    <div style={{ 
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.5rem',
+                      alignItems: 'center'
+                    }}>
+                      <button
+                        onClick={handleZoomIn}
+                        style={{
+                          width: '36px',
+                          height: '36px',
+                          backgroundColor: 'transparent',
+                          border: 'none',
+                          color: 'white',
+                          fontSize: '1.25rem',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'opacity 0.2s',
+                          opacity: 0.7
+                        }}
+                        onMouseEnter={(e) => e.target.style.opacity = '1'}
+                        onMouseLeave={(e) => e.target.style.opacity = '0.7'}
+                      >
+                        +
+                      </button>
+                      <button
+                        onClick={handleZoomOut}
+                        style={{
+                          width: '36px',
+                          height: '36px',
+                          backgroundColor: 'transparent',
+                          border: 'none',
+                          color: 'white',
+                          fontSize: '1.25rem',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'opacity 0.2s',
+                          opacity: 0.7
+                        }}
+                        onMouseEnter={(e) => e.target.style.opacity = '1'}
+                        onMouseLeave={(e) => e.target.style.opacity = '0.7'}
+                      >
+                        −
+                      </button>
+                    </div>
+                    {/* Increment/Decrement Buttons
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -3471,17 +3546,13 @@ const KinshipVisualization = () => {
                       >
                         +
                       </button>
-                    </div>
+                    </div> */}
 
                     {/* Vertical Scope List */}
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '0.5rem',
-                      backgroundColor: 'rgba(128, 128, 128, 0.25)',
-                      padding: '0.75rem',
-                      borderRadius: '8px',
-                      border: '1px solid rgba(255,255,255,0.15)',
                       minWidth: '140px'
                     }}>
                       {scopeLevels.map((level) => (
@@ -3494,20 +3565,20 @@ const KinshipVisualization = () => {
                           style={{
                             padding: '0.5rem 0.75rem',
                             backgroundColor: 'transparent',
-                            border: '1px solid transparent',
-                            borderRadius: '6px',
+                            border: 'none',
                             color: selectedScope === level ? 'white' : '#aaa',
                             fontSize: '0.85rem',
                             fontWeight: selectedScope === level ? '600' : '500',
                             cursor: 'pointer',
-                            transition: 'color 0.2s, font-weight 0.2s, background-color 0.2s',
+                            transition: 'color 0.2s, font-weight 0.2s, opacity 0.2s',
                             textAlign: 'left',
                             textTransform: 'capitalize',
-                            position: 'relative'
+                            position: 'relative',
+                            opacity: selectedScope === level ? 1 : 0.7
                           }}
                         >
                           {/* Gradient background */}
-                          {selectedScope === level && (
+                          {/* {selectedScope === level && (
                             <div 
                               style={{
                                 position: 'absolute',
@@ -3519,7 +3590,7 @@ const KinshipVisualization = () => {
                                 transition: 'opacity 0.2s ease-out'
                               }}
                             />
-                          )}
+                          )} */}
                           
                           {/* Text content */}
                           <span style={{ position: 'relative', zIndex: 1 }}>
@@ -3595,8 +3666,8 @@ const KinshipVisualization = () => {
                   <div 
                     style={{
                       position: 'absolute',
-                      top: '1rem',
-                      left: '1rem',
+                      top: '80px',
+                      left: '1.5rem',
                       backgroundColor: 'rgba(0,0,0,0.9)',
                       padding: '1.5rem',
                       borderRadius: '12px',
@@ -3692,7 +3763,7 @@ const KinshipVisualization = () => {
                   className="search-container"
                   style={{
                     position: 'absolute',
-                    top: '1.5rem',
+                    top: '80px',
                     left: '1.5rem',
                     zIndex: 10,
                     width: '320px'
@@ -3701,7 +3772,7 @@ const KinshipVisualization = () => {
                   <div style={{ position: 'relative' }}>
                     <input
                       type="text"
-                      placeholder="Type to discover activities..."
+                      placeholder="Type to discover cultures..."
                       value={curateSearchInput}
                       onChange={(e) => handleCurateSearch(e.target.value)}
                       style={{
@@ -3714,7 +3785,7 @@ const KinshipVisualization = () => {
                         color: 'white',
                         fontSize: '0.9rem',
                         outline: 'none',
-                        fontFamily: 'system-ui, sans-serif',
+                        fontFamily: "'IAAB3Mono', monospace",
                         transition: 'all 0.2s'
                       }}
                       onFocus={(e) => {
@@ -3727,18 +3798,21 @@ const KinshipVisualization = () => {
                       }}
                     />
                     
-                    <div style={{
-                      position: 'absolute',
-                      right: '1rem',
-                      top: '50%',
-                      transform: 'translateY(-50%) scaleX(0.85)',
-                      pointerEvents: 'none',
-                      filter: 'brightness(0.7)',
-                      fontSize: '1.1rem',
-                      color: 'rgba(255,255,255,0.5)'
-                    }}>
-                      🔬
-                    </div>
+                    <img 
+                      src="/microscope.png" 
+                      alt="search"
+                      style={{
+                        position: 'absolute',
+                        right: '1rem',
+                        top: '50%',
+                        transform: 'translateY(-50%) scaleX(0.8)',
+                        pointerEvents: 'none',
+                        filter: 'invert(1) brightness(0.7)',
+                        width: '20px',
+                        height: '20px',
+                        opacity: 0.5
+                      }}
+                    />
                   </div>
                   
                   {/* Suggestion Dropdown */}
@@ -4043,22 +4117,20 @@ const KinshipVisualization = () => {
                       }}>
                         <button
                           onClick={() => handleViewKinships(selectedCuratedCulture)}
-                          className="gradient-feedback-active"
                           style={{
                             width: '100%',
                             padding: '0.75rem',
-                            backgroundColor: 'rgba(255,255,255,0.1)',
-                            border: '1px solid rgba(255,255,255,0.2)',
-                            borderRadius: '8px',
+                            backgroundColor: 'transparent',
+                            border: 'none',
                             color: 'white',
                             fontSize: '0.9rem',
                             fontWeight: '500',
                             cursor: 'pointer',
-                            transition: 'all 0.2s',
-                            position: 'relative'
+                            transition: 'opacity 0.2s',
+                            opacity: 0.7
                           }}
-                          onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.15)'}
-                          onMouseLeave={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.1)'}
+                          onMouseEnter={(e) => e.target.style.opacity = '1'}
+                          onMouseLeave={(e) => e.target.style.opacity = '0.7'}
                         >
                           View kinships in explore mode
                         </button>
@@ -4103,31 +4175,23 @@ const KinshipVisualization = () => {
                       <button
                         id="curate-action-button"
                         onClick={() => handleCurateCulture(selectedCuratedCulture)}
-                        className="gradient-feedback-active"
                         style={{
                           padding: '0.75rem 1.5rem',
-                          borderRadius: '8px',
-                          backgroundColor: 'rgba(0,0,0,0.7)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(255,255,255,0.3)',
+                          backgroundColor: 'transparent',
+                          border: 'none',
                           color: 'white',
                           fontSize: '0.9rem',
                           fontWeight: '600',
                           cursor: 'pointer',
-                          transition: 'all 0.2s',
+                          transition: 'opacity 0.2s',
                           position: 'relative',
                           zIndex: 2,
                           textTransform: 'uppercase',
-                          letterSpacing: '0.05em'
+                          letterSpacing: '0.05em',
+                          opacity: 0.7
                         }}
-                        onMouseEnter={(e) => {
-                          e.target.style.backgroundColor = 'rgba(0,0,0,0.85)';
-                          e.target.style.borderColor = 'rgba(255,255,255,0.5)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.backgroundColor = 'rgba(0,0,0,0.7)';
-                          e.target.style.borderColor = 'rgba(255,255,255,0.3)';
-                        }}
+                        onMouseEnter={(e) => e.target.style.opacity = '1'}
+                        onMouseLeave={(e) => e.target.style.opacity = '0.7'}
                       >
                         {curatedActivities.find(c => c.id === selectedCuratedCulture.id) ? 'Curated' : 'Curate'}
                       </button>
@@ -4140,9 +4204,12 @@ const KinshipVisualization = () => {
 
           {/* NAVIGATION BAR AT BOTTOM */}
           <div style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
             height: '80px',
-            backgroundColor: 'rgba(0,0,0,0.95)',
-            borderTop: '1px solid rgba(255,255,255,0.1)',
+            backgroundColor: 'transparent',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -4155,22 +4222,20 @@ const KinshipVisualization = () => {
               <button
                 id="mode-toggle-button"
                 onClick={handleModeToggle}
-                className="gradient-feedback-active"
                 style={{
                   padding: '0.75rem 1.5rem',
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  borderRadius: '8px',
+                  backgroundColor: 'transparent',
+                  border: 'none',
                   color: 'white',
                   fontSize: '0.9rem',
                   fontWeight: '500',
                   cursor: 'pointer',
-                  transition: 'all 0.2s',
-                  position: 'relative',
+                  transition: 'opacity 0.2s',
+                  opacity: 0.7,
                   textTransform: 'capitalize'
                 }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.2)'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.1)'}
+                onMouseEnter={(e) => e.target.style.opacity = '1'}
+                onMouseLeave={(e) => e.target.style.opacity = '0.7'}
               >
                 {mode === 'explore' ? 'Curate' : 'Explore'}
               </button>
@@ -4185,14 +4250,14 @@ const KinshipVisualization = () => {
               )}
               {mode === 'curate' && (
                 <div style={{ fontSize: '0.85rem', color: '#888' }}>
-                  Type trigger characters (c, m, s, p, a) to discover activities
+                  Type trigger characters (c, m, s, p, a) to discover cultures
                 </div>
               )}
             </div>
 
             {/* Right: Zoom (explore) or Clear (curate) */}
             <div style={{ flex: '0 0 auto' }}>
-              {mode === 'explore' && !selectedCulture && (
+              {/* {mode === 'explore' && !selectedCulture && (
                 <div style={{ 
                   display: 'flex',
                   gap: '0.5rem',
@@ -4272,27 +4337,25 @@ const KinshipVisualization = () => {
                     ⊙
                   </button>
                 </div>
-              )}
+              )} */}
               
               {mode === 'curate' && (
                 <button
                   id="clear-button"
                   onClick={handleClearCurate}
-                  className="gradient-feedback-active"
                   style={{
                     padding: '0.75rem 1.5rem',
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                    border: '1px solid rgba(255,255,255,0.2)',
-                    borderRadius: '8px',
+                    backgroundColor: 'transparent',
+                    border: 'none',
                     color: 'white',
                     fontSize: '0.9rem',
                     fontWeight: '500',
                     cursor: 'pointer',
-                    transition: 'all 0.2s',
-                    position: 'relative'
+                    transition: 'opacity 0.2s',
+                    opacity: 0.7
                   }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.2)'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.1)'}
+                  onMouseEnter={(e) => e.target.style.opacity = '1'}
+                  onMouseLeave={(e) => e.target.style.opacity = '0.7'}
                 >
                   Clear
                 </button>
