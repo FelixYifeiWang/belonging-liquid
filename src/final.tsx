@@ -232,7 +232,9 @@ const KinshipVisualization = () => {
       const affiliationsText = row['Affiliation'] || '';
       const knowledgebase = parseInt(row['Knowledgebase']) || 5;
       const openness = parseInt(row['Openness']) || 5;
-      const language = parseInt(row['Language']) || 3; 
+      const language = parseInt(row['Language']) || 3;
+      const culturalPractices = row['Cultural Practices'] || '';
+      const freeText = row['Free Text'] || '';
       
       // Use precomputed values from processor
       const toCount = (v, fallback, scale = 1, mode = 'round', min = 0) => {
@@ -311,6 +313,8 @@ const KinshipVisualization = () => {
         size,
         frequencies: [2000], // Default frequency
         scopeLevel,
+        culturalPractices,
+        freeText,
         x,
         y,
         homeX: x,
@@ -2304,18 +2308,10 @@ const KinshipVisualization = () => {
     if (clickedCulture) {
       handleCultureClick(clickedCulture);
     } else {
-      // Check if we clicked on background while panel is open
-      if (selectedCulture && panelAnimationState === 'open') {
-        // Close panel only if not clicking on the panel itself
-        const panelElement = document.querySelector('.culture-details-panel');
-        if (panelElement && !panelElement.contains(event.target)) {
-          handleExitFocus();
-        }
-      } else {
-        setIsDragging(true);
-        isDraggingRef.current = true;
-        setLastMousePos({ x: event.clientX, y: event.clientY });
-      }
+      // Always enable dragging when clicking on empty space
+      setIsDragging(true);
+      isDraggingRef.current = true;
+      setLastMousePos({ x: event.clientX, y: event.clientY });
     }
   };
 
@@ -3672,11 +3668,11 @@ const KinshipVisualization = () => {
                       padding: '1.5rem',
                       borderRadius: '12px',
                       border: '1px solid rgba(255,255,255,0.15)',
-                      maxHeight: 'calc(100% - 2rem)',
+                      maxHeight: 'calc(100% - 160px)',
                       overflowY: 'auto',
-                      fontSize: '0.85rem',
-                      minWidth: '280px',
-                      maxWidth: '320px',
+                      fontSize: '0.9rem',
+                      minWidth: '320px',
+                      maxWidth: '400px',
                       scrollbarWidth: 'thin',
                       scrollbarColor: 'rgba(255,255,255,0.3) rgba(0,0,0,0.3)',
                       zIndex: 5,
@@ -3685,69 +3681,34 @@ const KinshipVisualization = () => {
                     className={`culture-details-panel panel-${panelAnimationState}`}
                   >
                     <div className={`panel-content-${panelAnimationState}`}>
-                      <h3 style={{ 
-                        margin: '0 0 1rem 0', 
-                        fontSize: '1rem', 
+                      <h2 style={{ 
+                        margin: '0 0 1.5rem 0', 
+                        fontSize: '1.25rem', 
                         fontWeight: '600',
-                        color: '#60a5fa',
-                        borderBottom: '1px solid rgba(255,255,255,0.1)',
-                        paddingBottom: '0.5rem'
+                        color: 'white',
+                        lineHeight: '1.4'
                       }}>
-                        Culture Details
-                      </h3>
+                        {selectedCulture.name}
+                      </h2>
                       
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        <div>
-                          <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>NAME</div>
-                          <div style={{ color: 'white', fontWeight: '500' }}>{selectedCulture.name}</div>
-                        </div>
-
-                        <div>
-                          <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>SCOPE</div>
-                          <div style={{ color: 'white', textTransform: 'capitalize' }}>{selectedCulture.scopeLevel}</div>
-                        </div>
-
-                        {selectedCulture.values && selectedCulture.values.length > 0 && (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                        {selectedCulture.culturalPractices && (
                           <div>
-                            <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>VALUES</div>
-                            <div style={{ color: 'white' }}>
-                              {selectedCulture.values.join(', ')}
+                            <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.5rem', fontWeight: '600', letterSpacing: '0.05em' }}>CULTURAL PRACTICES</div>
+                            <div style={{ color: 'white', lineHeight: '1.6' }}>
+                              {selectedCulture.culturalPractices}
                             </div>
                           </div>
                         )}
 
-                        {selectedCulture.kinships && selectedCulture.kinships.length > 0 && (
+                        {selectedCulture.freeText && (
                           <div>
-                            <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>KINSHIPS</div>
-                            <div style={{ color: 'white' }}>
-                              {selectedCulture.kinships.join(', ')}
+                            <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.5rem', fontWeight: '600', letterSpacing: '0.05em' }}>FREE TEXT</div>
+                            <div style={{ color: 'white', lineHeight: '1.6' }}>
+                              {selectedCulture.freeText}
                             </div>
                           </div>
                         )}
-
-                        {selectedCulture.affiliations && selectedCulture.affiliations.length > 0 && (
-                          <div>
-                            <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>AFFILIATIONS</div>
-                            <div style={{ color: 'white' }}>
-                              {selectedCulture.affiliations.join(', ')}
-                            </div>
-                          </div>
-                        )}
-
-                        <div>
-                          <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>KNOWLEDGEBASE</div>
-                          <div style={{ color: 'white' }}>{selectedCulture.knowledgebase}/10</div>
-                        </div>
-
-                        <div>
-                          <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>OPENNESS</div>
-                          <div style={{ color: 'white' }}>{selectedCulture.openness}/10</div>
-                        </div>
-
-                        <div>
-                          <div style={{ color: '#888', fontSize: '0.75rem', marginBottom: '0.25rem' }}>POLYGON SIDES</div>
-                          <div style={{ color: 'white' }}>{selectedCulture.sides} sides</div>
-                        </div>
                       </div>
                     </div>
                   </div>
